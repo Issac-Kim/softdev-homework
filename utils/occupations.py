@@ -24,7 +24,7 @@ for key in d:
     d[key][0] = float(d[key][0])
 
 def random_job():
-    random_num = random.random()*100
+    random_num = random.random()*99.8
     threshold = 0.0
     for key in d:
         threshold += d[key][0]
