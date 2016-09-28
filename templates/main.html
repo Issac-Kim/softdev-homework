@@ -3,9 +3,9 @@
   <head>
     <title> Occupations </title>
   </head>
-  <body>
+  <body link = "black">
     <h1> Occupations </h1>
-    <table style = "Width:100%">
+    <table style = "Width:100%", border = "1">
       <tr>
 	<td> Job Class </td>
 	<td> Percentage </td>
@@ -13,10 +13,10 @@
       {% for key in keys %}
       <tr>
 	<td>
-	  <a href = {{keys[key][1]}}>
-	    <div style = "height:100%; width:100%">
+	  <a href = {{keys[key][1]}} style = "color:black", style = "text-decoration:none">
+	   <!-- <div style = "height:100%; width:100%">-->
 	      {{key}}
-	    </div>
+	    <!--</div>-->
 	  </a>
 	</td>
 	<td> {{keys[key][0]}} </td>
@@ -28,6 +28,6 @@
       </tr>	
     </table>
     <h1> Random Job </h1>
-    <p> You will work in {{job}}, which is {{percentage}} of the workforce. Here is a helpful link, {{link}} </p>
+    <p> You will work in {{job}}, which is {{percentage}} of the workforce. <a href = {{link}}>Click here for help! </a> </p>
   </body>
 </html>
